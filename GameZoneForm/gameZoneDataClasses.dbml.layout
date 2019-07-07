@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.25, 22.25" name="gameZoneDataClasses">
+  <DataContextMoniker Name="/gameZoneDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" absoluteBounds="9.25, 0.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83c17d6d-d867-42b9-ba6d-232373968fdc" absoluteBounds="9.265, 1.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7575f9f9-c99d-42fc-a8c3-22f9721d331f" absoluteBounds="9.25, 14.5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89258297-c791-44dc-b890-19224130b830" absoluteBounds="9.265, 14.96, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="170bf1e4-2ee5-4b39-91a0-34b4ba047f02" absoluteBounds="6.5, 20.25, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/ACHIEVEMENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4cb5e1c-2c9b-4a3b-b820-7cb4ed0908c0" absoluteBounds="6.515, 20.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="805dda96-959a-4d1a-9adf-048e756e5676" absoluteBounds="9, 12.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/ACQUISTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a0ff2df-0dc8-4924-b2a9-0d189e3e8dbb" absoluteBounds="9.015, 12.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d556ead9-422d-4c7f-952c-7341aac51ace" absoluteBounds="3.5, 3.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/AGGIORNAMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d4238a6-5c14-4a5a-b037-840858b3e2f1" absoluteBounds="3.515, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66fc8a85-3d59-44e5-8486-6287bf9913b1" absoluteBounds="9.25, 4.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/BUG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="596711f9-83f6-4b60-857a-aae771e6f26a" absoluteBounds="9.265, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b27f5dc-9120-49af-8577-12126553e2e9" absoluteBounds="0.75, 6.5, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/CASA_PRODUTTRICE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25caa1ad-07c0-47d3-8020-340adcd0ed10" absoluteBounds="0.765, 6.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d9c989d-766e-4741-89b9-58f1c2443ce9" absoluteBounds="9.25, 6.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/CHIAVI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4159337c-a203-40e3-8eeb-4e195c3d11f0" absoluteBounds="9.265, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e4914491-7c35-4db5-9be0-daa63bf91518" absoluteBounds="12, 10.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/CONSEGUIMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a548c36d-5543-402c-8be6-6a7b4c54a143" absoluteBounds="12.015, 11.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3206477a-7cf4-456e-8534-66fa11547f39" absoluteBounds="3.75, 20.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/ETICHETTA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9e248f4-475a-4400-ae71-88cc11b979a2" absoluteBounds="3.765, 21.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45e90d0f-e870-4eea-bdc8-16f78da1e6e7" absoluteBounds="12, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/FRIENDLIST" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12792def-e5f0-43a3-a733-d004beb84720" absoluteBounds="12.015, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e0f17ec-6c98-4bc3-be88-8383f15d214e" absoluteBounds="6.5, 14.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/GENERE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4671905e-bb09-45a5-811c-000b8559010e" absoluteBounds="6.515, 15.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d020fbc9-a57d-4a68-9181-a52ca30510a1" absoluteBounds="3.75, 14.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/GIOCO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc86967e-25cc-48e6-aa99-54a781b4818c" absoluteBounds="3.765, 14.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f083a904-71dc-4376-8579-5f9a3932bfb5" absoluteBounds="3.5, 10.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/HARDWARE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e25b0775-d1d8-4838-8024-a57623cea794" absoluteBounds="3.515, 11.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f486baf5-20a3-4d17-8f7d-c8b84d6b49dc" absoluteBounds="3.5, 6.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/LAVORO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4a31b5a-af2d-440a-9c34-7fd02dc524a4" absoluteBounds="3.515, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2156bf7-6310-48a9-96d6-0dfa49e577fe" absoluteBounds="9.25, 9.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/LIBRERIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbc7b4cd-e34f-41f9-8cf6-3383a3e946de" absoluteBounds="9.265, 9.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02635d87-73f6-491a-948a-cf1100b77407" absoluteBounds="6.5, 2.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/PERSONA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d04c8ea4-a148-4c95-bb50-8e2b9e202293" absoluteBounds="6.515, 3.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09ddd645-6da3-4a8d-89ae-853be3ea936d" absoluteBounds="12, 6.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/RISCATTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93118a00-cfea-45ff-9f33-5d7ca35029f1" absoluteBounds="12.015, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e0d6bd9-b8d2-427d-b05a-9ebceb1d5bbb" absoluteBounds="12, 4.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/SEGNALAZIONE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc90c353-9694-42e3-af85-4c54721ba5d2" absoluteBounds="12.015, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" absoluteBounds="6.5, 6, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6528e2a1-ac74-4721-8bdc-4915fb02fe68" absoluteBounds="6.515, 6.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f51a12f-2144-4862-8b75-c8f7c25662cf" absoluteBounds="6.25, 17, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/TRANSAZIONE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e0dbdc8-90a1-4c23-9dd0-9acfb4183d4c" absoluteBounds="6.265, 17.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cbab23f3-1db0-4883-84e6-bd1a17a0ce4c" absoluteBounds="3.75, 0.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/TIPOLOGIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1f836d2-fdc3-46e0-bbaf-33298a376d5b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98c84dd1-4500-488e-a4e5-37b0670b3aa4" absoluteBounds="6.25, 11, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/gameZoneDataClassesDataContext/VETRINA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab4a5114-9639-4fdc-9457-3577a53b8026" absoluteBounds="6.265, 11.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.96079752604167); (5.61979166666667 : 4.96079752604167 : JumpStart); (5.78645833333333 : 4.96079752604167 : JumpEnd); (6.1690673828125 : 4.96079752604167 : JumpStart); (6.39583333333333 : 4.96079752604167 : JumpEnd); (8.66666666666667 : 4.96079752604167 : JumpStart); (8.95833333333333 : 4.96079752604167 : JumpEnd); (9.25 : 4.96079752604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/AGGIORNAMENTO/AGGIORNAMENTO_BUG" />
+      <nodes>
+        <classShapeMoniker Id="d556ead9-422d-4c7f-952c-7341aac51ace" />
+        <classShapeMoniker Id="66fc8a85-3d59-44e5-8486-6287bf9913b1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 6.5); (1.75 : 4.26044840494792); (3.5 : 4.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/CASA_PRODUTTRICE/CASA_PRODUTTRICE_AGGIORNAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="8b27f5dc-9120-49af-8577-12126553e2e9" />
+        <classShapeMoniker Id="d556ead9-422d-4c7f-952c-7341aac51ace" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.2007692307692 : 3.22280110677083); (11.625 : 3.6470318760016); (11.625 : 11.4142976888021); (11.6979166666667 : 11.4142976888021 : JumpStart); (11.8645833333333 : 11.4142976888021 : JumpEnd); (12 : 11.4142976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_CONSEGUIMENTO" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="e4914491-7c35-4db5-9be0-daa63bf91518" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 21.1354484049479); (13 : 21.1354484049479); (13 : 12.2035953776042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACHIEVEMENT/ACHIEVEMENT_CONSEGUIMENTO" />
+      <nodes>
+        <classShapeMoniker Id="170bf1e4-2ee5-4b39-91a0-34b4ba047f02" />
+        <classShapeMoniker Id="e4914491-7c35-4db5-9be0-daa63bf91518" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 2.06814697265625); (12 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_FRIENDLIST" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="45e90d0f-e870-4eea-bdc8-16f78da1e6e7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 14.5308202640224); (11.78125 : 13.9995702640224); (11.78125 : 2.9800439453125); (12 : 2.7612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT2/ACCOUNT2_FRIENDLIST" />
+      <nodes>
+        <classShapeMoniker Id="7575f9f9-c99d-42fc-a8c3-22f9721d331f" />
+        <classShapeMoniker Id="45e90d0f-e870-4eea-bdc8-16f78da1e6e7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.75 : 20.75); (4.75 : 16.1362939453125); (5.16666616666667 : 16.1362939453125 : JumpStart); (5.33333283333333 : 16.1362939453125 : JumpEnd); (6 : 16.1362939453125); (6 : 15.2219962565104); (6.5 : 15.2219962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ETICHETTA/ETICHETTA_GENERE" />
+      <nodes>
+        <classShapeMoniker Id="3206477a-7cf4-456e-8534-66fa11547f39" />
+        <classShapeMoniker Id="3e0f17ec-6c98-4bc3-be88-8383f15d214e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.2499995 : 15.8862939453125); (5.2499995 : 20.5); (6 : 20.5); (6 : 21.1354484049479); (6.5 : 21.1354484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/GIOCO/GIOCO_ACHIEVEMENT" />
+      <nodes>
+        <classShapeMoniker Id="d020fbc9-a57d-4a68-9181-a52ca30510a1" />
+        <classShapeMoniker Id="170bf1e4-2ee5-4b39-91a0-34b4ba047f02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 14.8609981282552); (6.5 : 14.8609981282552)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/GIOCO/GIOCO_GENERE" />
+      <nodes>
+        <classShapeMoniker Id="d020fbc9-a57d-4a68-9181-a52ca30510a1" />
+        <classShapeMoniker Id="3e0f17ec-6c98-4bc3-be88-8383f15d214e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.07859537760417); (1.75 : 11.9527498372396); (3.5 : 11.9527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/CASA_PRODUTTRICE/CASA_PRODUTTRICE_HARDWARE" />
+      <nodes>
+        <classShapeMoniker Id="8b27f5dc-9120-49af-8577-12126553e2e9" />
+        <classShapeMoniker Id="f083a904-71dc-4376-8579-5f9a3932bfb5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.31814697265625); (3.5 : 7.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/CASA_PRODUTTRICE/CASA_PRODUTTRICE_LAVORO" />
+      <nodes>
+        <classShapeMoniker Id="8b27f5dc-9120-49af-8577-12126553e2e9" />
+        <classShapeMoniker Id="f486baf5-20a3-4d17-8f7d-c8b84d6b49dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 3.22280110677083); (8.875 : 3.59780110677083); (8.875 : 9.125); (9.25 : 9.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_LIBRERIA" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="d2156bf7-6310-48a9-96d6-0dfa49e577fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 2.95514805338542); (9.25 : 2.95514805338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/PERSONA/PERSONA_ACCOUNT" />
+      <nodes>
+        <classShapeMoniker Id="02635d87-73f6-491a-948a-cf1100b77407" />
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 4.7131982421875); (6.37142556509888 : 4.84177267708862 : JumpStart); (6.25357443490112 : 4.95962380728638 : JumpEnd); (6.125 : 5.0881982421875); (6.125 : 7.31814697265625); (5.78645833333333 : 7.31814697265625 : JumpStart); (5.57291666666667 : 7.31814697265625 : JumpEnd); (5.5 : 7.31814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/PERSONA/PERSONA_LAVORO" />
+      <nodes>
+        <classShapeMoniker Id="02635d87-73f6-491a-948a-cf1100b77407" />
+        <classShapeMoniker Id="f486baf5-20a3-4d17-8f7d-c8b84d6b49dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 3.22126164523237); (11.6875 : 3.65876164523237); (11.6875 : 7.31814697265625); (11.6979166666667 : 7.31814697265625 : JumpStart); (11.8645833333333 : 7.31814697265625 : JumpEnd); (12 : 7.31814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_RISCATTO" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="09ddd645-6da3-4a8d-89ae-853be3ea936d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 6.90907348632813); (11.5416666666667 : 6.90907348632812 : JumpStart); (11.8645833333333 : 6.90907348632813 : JumpEnd); (12 : 6.90907348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/CHIAVI/CHIAVI_RISCATTO" />
+      <nodes>
+        <classShapeMoniker Id="4d9c989d-766e-4741-89b9-58f1c2443ce9" />
+        <classShapeMoniker Id="09ddd645-6da3-4a8d-89ae-853be3ea936d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 3.14126164523237); (11.7223244349011 : 3.61358608013349 : JumpStart); (11.8401755650989 : 3.73143721033125 : JumpEnd); (11.84375 : 3.73501164523237); (11.84375 : 5.06814697265625); (12 : 5.06814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_SEGNALAZIONE" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="5e0d6bd9-b8d2-427d-b05a-9ebceb1d5bbb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 4.65907348632813); (11.5416666666667 : 4.65907348632812 : JumpStart); (11.9270833333333 : 4.65907348632813 : JumpEnd); (12 : 4.65907348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/BUG/BUG_SEGNALAZIONE" />
+      <nodes>
+        <classShapeMoniker Id="66fc8a85-3d59-44e5-8486-6287bf9913b1" />
+        <classShapeMoniker Id="5e0d6bd9-b8d2-427d-b05a-9ebceb1d5bbb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.56153746153846 : 6); (6.3125 : 5.75096253846154); (6.3125 : 4.13664676302083); (5.78645833333333 : 4.13664676302083 : JumpStart); (5.61979166666667 : 4.13664676302083 : JumpEnd); (5.5 : 4.13664676302083)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE/SOFTWARE_AGGIORNAMENTO" />
+      <nodes>
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+        <classShapeMoniker Id="d556ead9-422d-4c7f-952c-7341aac51ace" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 6.06153746153846); (8.69107443490112 : 5.87046302663734 : JumpStart); (8.80892556509888 : 5.75261189643958 : JumpEnd); (8.81607443490112 : 5.74546302663734 : JumpStart); (8.93392556509888 : 5.62761189643958 : JumpEnd); (9.0625 : 5.49903746153846); (9.0625 : 6.08339680989583); (9.25 : 5.89589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE/SOFTWARE_BUG" />
+      <nodes>
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+        <classShapeMoniker Id="66fc8a85-3d59-44e5-8486-6287bf9913b1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 7.31814697265625); (8.66666666666667 : 7.31814697265625 : JumpStart); (8.95833333333333 : 7.31814697265625 : JumpEnd); (9.25 : 7.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE/SOFTWARE_CHIAVI" />
+      <nodes>
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+        <classShapeMoniker Id="4d9c989d-766e-4741-89b9-58f1c2443ce9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 8.5401025390625); (8.40625 : 10.2500025); (8.66666666666667 : 10.2500025 : JumpStart); (8.83333333333333 : 10.2500025 : JumpEnd); (9.25 : 10.2500025)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE/SOFTWARE_LIBRERIA" />
+      <nodes>
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+        <classShapeMoniker Id="d2156bf7-6310-48a9-96d6-0dfa49e577fe" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 14.5); (5.65625 : 6.28125); (6.04166666666667 : 6.28125 : JumpStart); (6.20833333333333 : 6.28125 : JumpEnd); (6.5 : 6.28125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/GIOCO/GIOCO_SOFTWARE" />
+      <nodes>
+        <classShapeMoniker Id="d020fbc9-a57d-4a68-9181-a52ca30510a1" />
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.53125); (5.57291666666667 : 6.53125 : JumpStart); (5.78645833333333 : 6.53125 : JumpEnd); (6.04166666666667 : 6.53125 : JumpStart); (6.20833333333333 : 6.53125 : JumpEnd); (6.5 : 6.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/CASA_PRODUTTRICE/CASA_PRODUTTRICE_SOFTWARE" />
+      <nodes>
+        <classShapeMoniker Id="8b27f5dc-9120-49af-8577-12126553e2e9" />
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 17.9815991210938); (9.09375 : 17.9815991210938); (9.09375 : 13.5689925130208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/TRANSAZIONE/TRANSAZIONE_ACQUISTO" />
+      <nodes>
+        <classShapeMoniker Id="6f51a12f-2144-4862-8b75-c8f7c25662cf" />
+        <classShapeMoniker Id="805dda96-959a-4d1a-9adf-048e756e5676" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.2253846153846 : 3.22280110677083); (10.2253846153846 : 3.875); (8.95833333333333 : 3.875 : JumpStart); (8.79166666666667 : 3.875 : JumpEnd); (8.75 : 3.875); (8.75 : 17.4595475605469); (8.25 : 17.4595475605469)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/ACCOUNT/ACCOUNT_TRANSAZIONE" />
+      <nodes>
+        <classShapeMoniker Id="5afca4e3-7c4d-4293-afd2-caa724cb12cc" />
+        <classShapeMoniker Id="6f51a12f-2144-4862-8b75-c8f7c25662cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.703125 : 1.75169108072917); (5.703125 : 8.3069482421875); (6.5 : 8.3069482421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/TIPOLOGIA/TIPOLOGIA_SOFTWARE" />
+      <nodes>
+        <classShapeMoniker Id="cbab23f3-1db0-4883-84e6-bd1a17a0ce4c" />
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.6690991210937); (8.66666666666667 : 12.6690991210937 : JumpStart); (8.83333333333333 : 12.6690991210937 : JumpEnd); (9 : 12.6690991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/VETRINA/VETRINA_ACQUISTO" />
+      <nodes>
+        <classShapeMoniker Id="98c84dd1-4500-488e-a4e5-37b0670b3aa4" />
+        <classShapeMoniker Id="805dda96-959a-4d1a-9adf-048e756e5676" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.9815991210937); (5.57291666666667 : 11.9815991210937 : JumpStart); (5.73958333333333 : 11.9815991210937 : JumpEnd); (6.25 : 11.9815991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/HARDWARE/HARDWARE_VETRINA" />
+      <nodes>
+        <classShapeMoniker Id="f083a904-71dc-4376-8579-5f9a3932bfb5" />
+        <classShapeMoniker Id="98c84dd1-4500-488e-a4e5-37b0670b3aa4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.375 : 8.5401025390625); (7.375 : 11)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/gameZoneDataClassesDataContext/SOFTWARE/SOFTWARE_VETRINA" />
+      <nodes>
+        <classShapeMoniker Id="dd51bb4a-5789-49a0-bda1-0a68a4c9acd7" />
+        <classShapeMoniker Id="98c84dd1-4500-488e-a4e5-37b0670b3aa4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

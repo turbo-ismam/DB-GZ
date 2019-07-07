@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GameZone" Class="gameZoneDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\SERVERSQL;Initial Catalog=GameZone;Integrated Security=True" SettingsObjectName="GameZoneForm.Properties.Settings" SettingsPropertyName="GameZoneConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ACCOUNT" Member="ACCOUNT">
+    <Type Name="ACCOUNT">
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nickname" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_creazione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Saldo_contabile" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Software_possieduti" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Numero_amici" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Achievement_completati" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CF" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_CONSEGUIMENTO" Member="CONSEGUIMENTO" ThisKey="email" OtherKey="email" Type="CONSEGUIMENTO" />
+      <Association Name="ACCOUNT_FRIENDLIST" Member="FRIENDLIST" ThisKey="email" OtherKey="email" Type="FRIENDLIST" />
+      <Association Name="ACCOUNT_LIBRERIA" Member="LIBRERIA" ThisKey="email" OtherKey="email" Type="LIBRERIA" />
+      <Association Name="ACCOUNT_RISCATTO" Member="RISCATTO" ThisKey="email" OtherKey="email" Type="RISCATTO" />
+      <Association Name="ACCOUNT_SEGNALAZIONE" Member="SEGNALAZIONE" ThisKey="email" OtherKey="email" Type="SEGNALAZIONE" />
+      <Association Name="ACCOUNT_TRANSAZIONE" Member="TRANSAZIONE" ThisKey="email" OtherKey="email" Type="TRANSAZIONE" />
+      <Association Name="PERSONA_ACCOUNT" Member="PERSONA" ThisKey="CF" OtherKey="CF" Type="PERSONA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACCOUNT2" Member="ACCOUNT2">
+    <Type Name="ACCOUNT2">
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ACCOUNT2_FRIENDLIST" Member="FRIENDLIST" ThisKey="email" OtherKey="F_A_email" Type="FRIENDLIST" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACHIEVEMENT" Member="ACHIEVEMENT">
+    <Type Name="ACHIEVEMENT">
+      <Column Name="Id_Achievement" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Difficolta" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Punti_esperienza" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ACHIEVEMENT_CONSEGUIMENTO" Member="CONSEGUIMENTO" ThisKey="Titolo,Nome" OtherKey="Titolo,Nome" Type="CONSEGUIMENTO" />
+      <Association Name="GIOCO_ACHIEVEMENT" Member="GIOCO" ThisKey="Titolo" OtherKey="Titolo" Type="GIOCO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACQUISTO" Member="ACQUISTO">
+    <Type Name="ACQUISTO">
+      <Column Name="Id_transazione" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Codice" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="TRANSAZIONE_ACQUISTO" Member="TRANSAZIONE" ThisKey="Id_transazione" OtherKey="Id_transazione" Type="TRANSAZIONE" IsForeignKey="true" />
+      <Association Name="VETRINA_ACQUISTO" Member="VETRINA" ThisKey="Codice" OtherKey="Codice" Type="VETRINA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AGGIORNAMENTO" Member="AGGIORNAMENTO">
+    <Type Name="AGGIORNAMENTO">
+      <Column Name="Versione" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Partita_iva" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Association Name="AGGIORNAMENTO_BUG" Member="BUG" ThisKey="Versione" OtherKey="Versione" Type="BUG" />
+      <Association Name="CASA_PRODUTTRICE_AGGIORNAMENTO" Member="CASA_PRODUTTRICE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="CASA_PRODUTTRICE" IsForeignKey="true" />
+      <Association Name="SOFTWARE_AGGIORNAMENTO" Member="SOFTWARE" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="SOFTWARE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BUG" Member="BUG">
+    <Type Name="BUG">
+      <Column Name="Id_bug" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Desrizione" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_riparazione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Versione" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Association Name="BUG_SEGNALAZIONE" Member="SEGNALAZIONE" ThisKey="Id_bug" OtherKey="Id_bug" Type="SEGNALAZIONE" />
+      <Association Name="AGGIORNAMENTO_BUG" Member="AGGIORNAMENTO" ThisKey="Versione" OtherKey="Versione" Type="AGGIORNAMENTO" IsForeignKey="true" />
+      <Association Name="SOFTWARE_BUG" Member="SOFTWARE" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="SOFTWARE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CASA_PRODUTTRICE" Member="CASA_PRODUTTRICE">
+    <Type Name="CASA_PRODUTTRICE">
+      <Column Name="Partita_iva" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Sede" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Bug_fixati" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CASA_PRODUTTRICE_AGGIORNAMENTO" Member="AGGIORNAMENTO" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="AGGIORNAMENTO" />
+      <Association Name="CASA_PRODUTTRICE_HARDWARE" Member="HARDWARE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="HARDWARE" />
+      <Association Name="CASA_PRODUTTRICE_LAVORO" Member="LAVORO" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="LAVORO" />
+      <Association Name="CASA_PRODUTTRICE_SOFTWARE" Member="SOFTWARE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="SOFTWARE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHIAVI" Member="CHIAVI">
+    <Type Name="CHIAVI">
+      <Column Name="Id_chiave" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data_creazione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Association Name="CHIAVI_RISCATTO" Member="RISCATTO" ThisKey="Id_chiave" OtherKey="Id_chiave" Type="RISCATTO" Cardinality="One" />
+      <Association Name="SOFTWARE_CHIAVI" Member="SOFTWARE" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="SOFTWARE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONSEGUIMENTO" Member="CONSEGUIMENTO">
+    <Type Name="CONSEGUIMENTO">
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_CONSEGUIMENTO" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+      <Association Name="ACHIEVEMENT_CONSEGUIMENTO" Member="ACHIEVEMENT" ThisKey="Titolo,Nome" OtherKey="Titolo,Nome" Type="ACHIEVEMENT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ETICHETTA" Member="ETICHETTA">
+    <Type Name="ETICHETTA">
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ETICHETTA_GENERE" Member="GENERE" ThisKey="Nome" OtherKey="Nome" Type="GENERE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRIENDLIST" Member="FRIENDLIST">
+    <Type Name="FRIENDLIST">
+      <Column Name="F_A_email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_FRIENDLIST" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+      <Association Name="ACCOUNT2_FRIENDLIST" Member="ACCOUNT2" ThisKey="F_A_email" OtherKey="email" Type="ACCOUNT2" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GENERE" Member="GENERE">
+    <Type Name="GENERE">
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="ETICHETTA_GENERE" Member="ETICHETTA" ThisKey="Nome" OtherKey="Nome" Type="ETICHETTA" IsForeignKey="true" />
+      <Association Name="GIOCO_GENERE" Member="GIOCO" ThisKey="Titolo" OtherKey="Titolo" Type="GIOCO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GIOCO" Member="GIOCO">
+    <Type Name="GIOCO">
+      <Column Name="Titolo" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valutazione" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Numero_achievement" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="GIOCO_ACHIEVEMENT" Member="ACHIEVEMENT" ThisKey="Titolo" OtherKey="Titolo" Type="ACHIEVEMENT" />
+      <Association Name="GIOCO_GENERE" Member="GENERE" ThisKey="Titolo" OtherKey="Titolo" Type="GENERE" />
+      <Association Name="GIOCO_SOFTWARE" Member="SOFTWARE" ThisKey="Titolo" OtherKey="Titolo" Type="SOFTWARE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HARDWARE" Member="HARDWARE">
+    <Type Name="HARDWARE">
+      <Column Name="Seriale" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Descrizione" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Tipologia" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Modello" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Disponibilita" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Partita_iva" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="HARDWARE_VETRINA" Member="VETRINA" ThisKey="Seriale" OtherKey="Seriale" Type="VETRINA" />
+      <Association Name="CASA_PRODUTTRICE_HARDWARE" Member="CASA_PRODUTTRICE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="CASA_PRODUTTRICE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LAVORO" Member="LAVORO">
+    <Type Name="LAVORO">
+      <Column Name="Partita_iva" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data_assunzione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="CF" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="CASA_PRODUTTRICE_LAVORO" Member="CASA_PRODUTTRICE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="CASA_PRODUTTRICE" IsForeignKey="true" />
+      <Association Name="PERSONA_LAVORO" Member="PERSONA" ThisKey="CF" OtherKey="CF" Type="PERSONA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LIBRERIA" Member="LIBRERIA">
+    <Type Name="LIBRERIA">
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data_acquisto" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Ore_di_utilizzo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_LIBRERIA" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+      <Association Name="SOFTWARE_LIBRERIA" Member="SOFTWARE" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="SOFTWARE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERSONA" Member="PERSONA">
+    <Type Name="PERSONA">
+      <Column Name="CF" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Titolo_di_studio" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Cognome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_di_nascita" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Residenza" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="PERSONA_ACCOUNT" Member="ACCOUNT" ThisKey="CF" OtherKey="CF" Type="ACCOUNT" />
+      <Association Name="PERSONA_LAVORO" Member="LAVORO" ThisKey="CF" OtherKey="CF" Type="LAVORO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RISCATTO" Member="RISCATTO">
+    <Type Name="RISCATTO">
+      <Column Name="Id_chiave" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data_riscatto" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_RISCATTO" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+      <Association Name="CHIAVI_RISCATTO" Member="CHIAVI" ThisKey="Id_chiave" OtherKey="Id_chiave" Type="CHIAVI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SEGNALAZIONE" Member="SEGNALAZIONE">
+    <Type Name="SEGNALAZIONE">
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id_bug" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data_segnalazione" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="ACCOUNT_SEGNALAZIONE" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+      <Association Name="BUG_SEGNALAZIONE" Member="BUG" ThisKey="Id_bug" OtherKey="Id_bug" Type="BUG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SOFTWARE" Member="SOFTWARE">
+    <Type Name="SOFTWARE">
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Seriale" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Titolo" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="Descrizione" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Tipologia" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Modello" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TIP_Nome" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Partita_iva" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="SOFTWARE_AGGIORNAMENTO" Member="AGGIORNAMENTO" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="AGGIORNAMENTO" />
+      <Association Name="SOFTWARE_BUG" Member="BUG" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="BUG" />
+      <Association Name="SOFTWARE_CHIAVI" Member="CHIAVI" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="CHIAVI" />
+      <Association Name="SOFTWARE_LIBRERIA" Member="LIBRERIA" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="LIBRERIA" />
+      <Association Name="SOFTWARE_VETRINA" Member="VETRINA" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="VETRINA" />
+      <Association Name="GIOCO_SOFTWARE" Member="GIOCO" ThisKey="Titolo" OtherKey="Titolo" Type="GIOCO" IsForeignKey="true" />
+      <Association Name="CASA_PRODUTTRICE_SOFTWARE" Member="CASA_PRODUTTRICE" ThisKey="Partita_iva" OtherKey="Partita_iva" Type="CASA_PRODUTTRICE" IsForeignKey="true" />
+      <Association Name="TIPOLOGIA_SOFTWARE" Member="TIPOLOGIA1" ThisKey="TIP_Nome" OtherKey="Nome" Type="TIPOLOGIA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRANSAZIONE" Member="TRANSAZIONE">
+    <Type Name="TRANSAZIONE">
+      <Column Name="Id_transazione" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Numero_prodotti_comprati" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Costo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Metodo_pagamento" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Association Name="TRANSAZIONE_ACQUISTO" Member="ACQUISTO" ThisKey="Id_transazione" OtherKey="Id_transazione" Type="ACQUISTO" />
+      <Association Name="ACCOUNT_TRANSAZIONE" Member="ACCOUNT" ThisKey="email" OtherKey="email" Type="ACCOUNT" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TIPOLOGIA" Member="TIPOLOGIA">
+    <Type Name="TIPOLOGIA">
+      <Column Name="Nome" Type="System.String" DbType="Char(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="TIPOLOGIA_SOFTWARE" Member="SOFTWARE" ThisKey="Nome" OtherKey="TIP_Nome" Type="SOFTWARE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VETRINA" Member="VETRINA">
+    <Type Name="VETRINA">
+      <Column Name="Codice" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Data_inizio" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Data_fine" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Costo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Seriale" Type="System.String" DbType="Char(30)" CanBeNull="true" />
+      <Column Name="ID_SOF" Type="System.Decimal" DbType="Decimal(10,0)" CanBeNull="true" />
+      <Association Name="VETRINA_ACQUISTO" Member="ACQUISTO" ThisKey="Codice" OtherKey="Codice" Type="ACQUISTO" />
+      <Association Name="HARDWARE_VETRINA" Member="HARDWARE" ThisKey="Seriale" OtherKey="Seriale" Type="HARDWARE" IsForeignKey="true" />
+      <Association Name="SOFTWARE_VETRINA" Member="SOFTWARE" ThisKey="ID_SOF" OtherKey="ID_SOF" Type="SOFTWARE" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
